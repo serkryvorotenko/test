@@ -16,10 +16,15 @@
 body {
     font-family: "Inter", sans-serif;
     background: #F6F5F2;
-    min-height: 100vh;
+    height: 100vh;
+    overflow: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+body.scroll-block {
+    overflow: hidden;
 }
 
 main {
@@ -471,7 +476,7 @@ a {
         top: -100%;
         width: 100%;
         height: calc(100% - 90px);
-        background: rgba(255, 255, 255, 0.47);
+        background: rgba(255, 255, 255, 0.9);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -502,6 +507,7 @@ a {
     .header-burger > span {
         border: 1px solid black;
         width: 20px;
+        transition: 0.2s;
     }
 
     .header-burger.active > span:nth-child(2) {

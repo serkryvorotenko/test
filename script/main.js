@@ -6,6 +6,7 @@ burgerBtn.addEventListener('click', () => {
     nav.classList.toggle('active')
     burgerBtn.classList.toggle('active')
     headerMenu.classList.toggle('active')
+    document.body.classList.toggle('scroll-block');
 })
 
 
